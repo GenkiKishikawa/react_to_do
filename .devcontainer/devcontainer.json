@@ -8,6 +8,11 @@
 			"extensions": [
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
+				"rodrigovallades.es7-react-js-snippets",
+				"planbcoding.vscode-react-refactor",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"jawandarajbir.react-vscode-extension-pack"
 			]
 		}
 	}
