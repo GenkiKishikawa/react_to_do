@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Create React Appで始める
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+このプロジェクトは[Create React App](https://github.com/facebook/create-react-app)でブートストラップされました。
 
-## Available Scripts
+## 利用可能なスクリプト
 
-In the project directory, you can run:
+プロジェクトディレクトリでは、以下のコマンドを実行できます：
 
-### `npm start`
+### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+開発モードでアプリを実行します。\
+ブラウザで[http://localhost:3000](http://localhost:3000)を開いて表示します。
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+編集を行うとページがリロードされます。\
+コンソールにはlintエラーも表示されます。
 
-### `npm test`
+### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+テストランナーをインタラクティブなウォッチモードで起動します。\
+詳細は[テストの実行](https://facebook.github.io/create-react-app/docs/running-tests)のセクションをご覧ください。
 
-### `npm run build`
+### `yarn run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+アプリを`build`フォルダにプロダクション用にビルドします。\
+Reactをプロダクションモードで正しくバンドルし、最高のパフォーマンスを得るためにビルドを最適化します。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ビルドは最小化され、ファイル名にはハッシュが含まれます。\
+あなたのアプリはデプロイの準備ができています！
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+詳細は[デプロイ](https://facebook.github.io/create-react-app/docs/deployment)のセクションをご覧ください。
 
-### `npm run eject`
+### `yarn run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**注意: これは一方通行の操作です。一度`eject`すると、戻ることはできません！**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ビルドツールや設定の選択に満足できない場合は、いつでも`eject`できます。このコマンドはプロジェクトから単一のビルド依存関係を削除します。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+代わりに、すべての設定ファイルと推移的な依存関係（webpack、Babel、ESLintなど）をプロジェクトに直接コピーします。これにより、それらを完全に制御できます。`eject`を除くすべてのコマンドは引き続き動作しますが、コピーされたスクリプトを指すようになります。この時点であなたは自分自身で対応する必要があります。
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`eject`を使用する必要はありません。この機能は小規模から中規模のデプロイに適していますし、この機能を使用する義務を感じる必要はありません。しかし、このツールがカスタマイズできない場合には役立たないことを理解しています。
 
-## Learn More
+## もっと詳しく
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Create React Appのドキュメンテーション](https://facebook.github.io/create-react-app/docs/getting-started)で詳細を学ぶことができます。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Reactについて学ぶには、[Reactのドキュメンテーション](https://reactjs.org/)をご覧ください。
