@@ -1,0 +1,14 @@
+{
+	"name": "demo-app",
+	"dockerComposeFile": "../docker-compose.yaml",
+	"service": "demo-app",
+	"workspaceFolder": "/src/",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+			]
+		}
+	}
+}
