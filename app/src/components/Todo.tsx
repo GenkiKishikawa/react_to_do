@@ -1,5 +1,4 @@
 import React from "react";
-import DeleteTodo from "./DeleteTodo";
 import axios from "axios";
 
 type Props = {
