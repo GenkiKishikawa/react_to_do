@@ -13,8 +13,14 @@
 				"esbenp.prettier-vscode",
 				"dbaeumer.vscode-eslint",
 				"jawandarajbir.react-vscode-extension-pack",
-				"oderwat.indent-rainbow"
-			]
+				"oderwat.indent-rainbow",
+				"bradlc.vscode-tailwindcss"
+			],
+			"settings": {
+				"files.associations": {
+					"*.css": "tailwindcss"
+				}
+			}
 		}
 	}
 }

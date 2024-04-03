@@ -55,13 +55,32 @@ const Todo = (props: Props) => {
       });
   }
 
-  return <>
-    <div className="todo">
-      <input className="checkTodo" id={String(props.todo.id)} type="checkbox" checked={props.todo.done} onChange={toggleTodo} readOnly />
-      <label htmlFor={String(props.todo.id)}>{props.todo.title} : {props.todo.due_date}</label>
-      <button onClick={DeleteTodo}>Todoを削除</button>
+  return (
+    <div className="flex items-center justify-between bg-white hover:bg-gray-100 p-4 rounded-lg shadow mb-2">
+      <div className="flex items-center">
+        <input
+          className="form-checkbox h-5 w-5 text-blue-600 rounded" 
+          id={String(props.todo.id)} 
+          type="checkbox" 
+          checked={props.todo.done} 
+          onChange={toggleTodo}
+          readOnly
+        />
+        <label
+          htmlFor={String(props.todo.id)}
+          className={`ml-2 text-lg ${props.todo.done ? "line-through" : ""}`}
+        >
+          {props.todo.title} : {props.todo.due_date}
+        </label>
+      </div>
+      <button
+        onClick={DeleteTodo}
+        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >
+        削除
+      </button>
     </div>
-  </>;
+  );
 };
 
 export default Todo;
