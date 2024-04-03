@@ -28,8 +28,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Todoアプリ</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-4xl text-center font-extrabold p-5 mb-10 bg-white rounded-lg shadow-md">
+        Todoアプリ
+      </h1>
       <AddTodo getTasks={getTasks}/>
       <TodoList todos={todos} setTodos={setTodos} getTasks={getTasks}/>
     </div>
