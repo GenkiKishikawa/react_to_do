@@ -23,14 +23,14 @@ const DeleteTodoButton = (props: Props) => {
 	}
 
 	return (
-		<>
+		<div className="pl-10">
 			<button
 				onClick={deleteTodo}
-				className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow-md focus:outline-none focus:shadow-outline"
+				className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full shadow-md focus:outline-none focus:shadow-outline"
 			>
 				削除
 			</button>
-		</>
+		</div>
 	);
 }
 

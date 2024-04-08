@@ -49,9 +49,9 @@ const Todo = (props: Props) => {
         />
         <label
           htmlFor={String(props.todo.id)}
-          className={`ml-2 text-lg ${props.todo.done ? 'line-through' : ''}`}
+          className={`ml-2 text-lg font-bold ${props.todo.done ? "line-through" : ""}`}
         >
-          {props.todo.title} : {props.todo.due_date}
+          {props.todo.title}  {props.todo.due_date}
         </label>
       </div>
       <DeleteTodoButton todo={props.todo} getTasks={props.getTasks} />

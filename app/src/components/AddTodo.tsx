@@ -36,13 +36,13 @@ const AddTodo = (props: Props) => {
   return (
     <div className="flex flex-col items-center justify-center mt-5">
       <input
-        className="inputTodo shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="inputTodo shadow appearance-none font-bold border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         type="text"
         placeholder="Todoを追加"
         ref={titleText}
       />
       <input
-        className="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="mt-2 shadow appearance-none font-bold border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         type="date"
         ref={dueDateText}
       />
