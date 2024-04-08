@@ -14,14 +14,15 @@ function App() {
   const [todos, setTodos] = useState<Todos[]>([]);
 
   const getTasks = () => {
-    axios.get('http://localhost:8000/tasks')
+    axios
+      .get('http://localhost:8000/tasks')
       .then((res) => {
         setTodos(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }
+  };
 
   useEffect(() => {
     getTasks();
@@ -32,8 +33,8 @@ function App() {
       <h1 className="text-4xl text-center font-extrabold p-5 mb-10 bg-white rounded-lg shadow-md">
         Todoアプリ
       </h1>
-      <AddTodo getTasks={getTasks}/>
-      <TodoList todos={todos} setTodos={setTodos} getTasks={getTasks}/>
+      <AddTodo getTasks={getTasks} />
+      <TodoList todos={todos} setTodos={setTodos} getTasks={getTasks} />
     </div>
   );
 }
