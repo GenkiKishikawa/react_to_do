@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import axios from "axios";
+import React, { useRef } from 'react';
+import axios from 'axios';
 
 type Props = {
   getTasks: () => void;
@@ -11,22 +11,27 @@ type NewTodo = {
 };
 
 const AddTodo = (props: Props) => {
-  const titleText = useRef<HTMLInputElement>(null)
-  const dueDateText = useRef<HTMLInputElement>(null)
+  const titleText = useRef<HTMLInputElement>(null);
+  const dueDateText = useRef<HTMLInputElement>(null);
 
   const addTodo = () => {
-    if (titleText.current === null) return
-    if (titleText.current.value === "") return alert("Todoを入力してください!!");
-    let newTodo: NewTodo = { title: titleText.current.value, due_date: dueDateText.current?.value }
-	  axios.post('http://localhost:8000/tasks', newTodo)
+    if (titleText.current === null) return;
+    if (titleText.current.value === '')
+      return alert('Todoを入力してください!!');
+    let newTodo: NewTodo = {
+      title: titleText.current.value,
+      due_date: dueDateText.current?.value,
+    };
+    axios
+      .post('http://localhost:8000/tasks', newTodo)
       .then((res) => {
         props.getTasks();
-        titleText.current.value = "";
+        titleText.current.value = '';
       })
       .catch((err) => {
         console.log(err);
       });
-  }
+  };
 
   return (
     <div className="flex flex-col items-center justify-center mt-5">
