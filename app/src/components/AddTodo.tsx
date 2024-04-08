@@ -47,7 +47,7 @@ const AddTodo = (props: Props) => {
         ref={dueDateText}
       />
       <button
-        className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="mt-2 shadow-md bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         onClick={addTodo}
       >
         追加
