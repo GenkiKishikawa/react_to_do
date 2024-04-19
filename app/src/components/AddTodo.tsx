@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import axios from 'axios';
+import React, { useRef } from "react";
+import { API } from "../axios";
 
 type Props = {
   getTasks: () => void;
@@ -15,15 +15,10 @@ const AddTodo = (props: Props) => {
   const dueDateText = useRef<HTMLInputElement>(null);
 
   const addTodo = () => {
-    if (titleText.current === null) return;
-    if (titleText.current.value === '')
-      return alert('Todoを入力してください!!');
-    let newTodo: NewTodo = {
-      title: titleText.current.value,
-      due_date: dueDateText.current?.value,
-    };
-    axios
-      .post('http://localhost:8000/tasks', newTodo)
+    if (titleText.current === null) return
+    if (titleText.current.value === "") return alert("Todoを入力してください!!");
+    let newTodo: NewTodo = { title: titleText.current.value, due_date: dueDateText.current?.value }
+    API.post('/tasks', newTodo)
       .then((res) => {
         props.getTasks();
         titleText.current.value = '';
