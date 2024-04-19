@@ -25,12 +25,7 @@ const TodoList = (props: Props) => {
       {props.todos.map((todo) => {
         return (
           <div key={todo.id} className="p-4">
-            <Todo
-              todo={todo}
-              todos={props.todos}
-              setTodos={props.setTodos}
-              getTasks={props.getTasks}
-            />
+            <Todo todo={todo} getTasks={props.getTasks} />
           </div>
         );
       })}
