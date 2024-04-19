@@ -1,5 +1,5 @@
-import React from 'react';
-import axios from 'axios';
+import React from "react";
+import { API } from "../axios";
 
 type Props = {
   todo: {
@@ -35,14 +35,12 @@ type Todos = {
 const Todo = (props: Props) => {
   const toggleTodo = () => {
     if (!props.todo.done) {
-      axios
-        .put(`http://localhost:8000/tasks/${props.todo.id}/done`)
+      API.put(`/${props.todo.id}/done`)
         .then((res) => {
           props.getTasks();
         });
     } else {
-      axios
-        .delete(`http://localhost:8000/tasks/${props.todo.id}/done`)
+      API.delete(`/${props.todo.id}/done`)
         .then((res) => {
           props.getTasks();
         });
@@ -50,8 +48,7 @@ const Todo = (props: Props) => {
   };
 
   const DeleteTodo = () => {
-    axios
-      .delete(`http://localhost:8000/tasks/${props.todo.id}`)
+    API.delete(`/tasks/${props.todo.id}`)
       .then((res) => {
         props.getTasks();
       })

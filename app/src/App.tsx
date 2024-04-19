@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { API } from './axios';
 import AddTodo from './components/AddTodo';
 import TodoList from './components/TodoList';
 
@@ -14,8 +14,7 @@ function App() {
   const [todos, setTodos] = useState<Todos[]>([]);
 
   const getTasks = () => {
-    axios
-      .get('http://localhost:8000/tasks')
+    API.get('/tasks')
       .then((res) => {
         setTodos(res.data);
       })
